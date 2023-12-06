@@ -11,7 +11,7 @@ try:
     while True:
         voltage = battery_voltage()
         temp = cubesat.IMU.mcp.temperature
-        if(voltage > cubesat.NORMAL_BATTERY_VOLTAGE & temp > -20 & temp <35):
+        if(voltage > cubesat.NORMAL_BATTERY_VOLTAGE & temp <35):
             break
         
 
