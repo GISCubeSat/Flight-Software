@@ -6,7 +6,6 @@ from Big_Data import Get_Thermo_Data
 try:
     time.sleep(10)
     microcontroller.reset()
-    print('in safemode')
     
     while True:
         voltage = battery_voltage()
